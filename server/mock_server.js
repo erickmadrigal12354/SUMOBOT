@@ -98,3 +98,7 @@ wss.on('connection', (ws) => {
         clearInterval(interval);
     });
 });
+
+
+// USOOOOOO: EN UNA TERMINAL bash: node mock_server.js
+// ABRIR EL FILE INDEX.HTML ANTES
