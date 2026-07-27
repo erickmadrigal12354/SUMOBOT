@@ -101,7 +101,7 @@ function actualizarEstadoProgramacion(nuevoEstado) {
    ========================================================================== */
 
 // Direcciones por defecto
-const MOCK_URL = "ws://localhost:8080";
+const MOCK_URL = "wss://twistable-snitch-impure.ngrok-free.dev";
 let sumoRealIP = localStorage.getItem("cenfobot_ip") || "192.168.1.50";
 
 // Estado de red
