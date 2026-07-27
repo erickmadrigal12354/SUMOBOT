@@ -18,7 +18,7 @@ function renderizarDohyo(data) {
     const centerY = height / 2;
 
     // Escala: traducir el radio real del Dohyo (38.5 cm) a ~180 píxeles en el Canvas
-    const radioDohyoCm = 38.5;
+    const radioDohyoCm = 80.0;
     const escala = 180 / radioDohyoCm;
 
     // -------------------------------------------------------------------------
