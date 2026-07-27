@@ -1,7 +1,7 @@
 const { WebSocketServer } = require('ws');
 
 // Puerto para el simulador
-const socket = new WebSocket('wss://short-ends-stick.loca.lt');
+const socket = new WebSocket('wss://huge-fans-admire.loca.lt');
 const wss = new WebSocketServer({ port: PORT });
 
 console.log(`[SIMULADOR] Servidor Mock activo en ws://localhost:${PORT}`);
