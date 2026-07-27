@@ -60,7 +60,7 @@ function simularPaso() {
 
     // 4. Calcular zona
     if (state.distanciaCentro <= 15) state.zona = "CENTRO";
-    else if (state.distanciaCentro <= 28) state.zona = "INTERMEDIA";
+    else if (state.distanciaCentro <= 60) state.zona = "INTERMEDIA";
     else state.zona = "EXTERIOR";
 
     // 5. Simular sensor ultrasónico (Sonar)
