@@ -1,6 +1,7 @@
 const { WebSocketServer } = require('ws');
 
 // Puerto para el simulador
+const PORT = 8080;
 const socket = new WebSocket('http://127.0.0.1:8080');
 const wss = new WebSocketServer({ port: PORT });
 
