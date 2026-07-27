@@ -12,9 +12,9 @@ PUNTOS RÁPIDOS A CONSIDERAR ---->
 
 PARA ACTUAIZAR LA PROGRAMACIÓN --->
 git add .
-git commit -m "Descripción de los cambios que hiciste"
-git push origin Principal
+git commit -m "Mensaje"
+git push origin gh-pages
 
-git add .
-git commit -m "Cambio de texto"
-git push origin Principal
+
+SERVIDOR SIMULADOR --->
+node server/mock_server.js    
