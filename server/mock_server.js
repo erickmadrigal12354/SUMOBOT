@@ -14,7 +14,7 @@ let state = {
     theta: 0.0,
     zona: "EXTERIOR",
     estado: "ALINEAR_IR",
-    distanciaCentro: 34.5,
+    distanciaCentro: 80.0,
     ir: [1, 1, 0, 0], // [s1, s2, s3, s4]
     sonar_cm: 45.0
 };
