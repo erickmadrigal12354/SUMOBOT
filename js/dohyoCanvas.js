@@ -19,7 +19,7 @@ function renderizarDohyo(data) {
 
     // Escala: traducir el radio real del Dohyo (38.5 cm) a ~180 píxeles en el Canvas
     const radioDohyoCm = 80.0;
-    const escala = 360 / radioDohyoCm;
+    const escala = 180 / radioDohyoCm;
 
     // -------------------------------------------------------------------------
     // 1. LIMPIAR CANVAS
@@ -85,7 +85,7 @@ function renderizarDohyo(data) {
     // -------------------------------------------------------------------------
     const distSonar = data.sonar_cm;
 
-    if (distSonar > 0 && distSonar <= 38) {
+    if (distSonar > 0 && distSonar <= 80) {
         // Calcular coordenadas del oponente usando trigonometría
         const oponenteX = robotCanvasX + (distSonar * escala) * Math.cos(angleRad);
         const oponenteY = robotCanvasY + (distSonar * escala) * Math.sin(angleRad);
