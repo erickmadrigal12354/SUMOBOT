@@ -10,7 +10,7 @@ console.log(`[SIMULADOR] Servidor Mock activo en ws://localhost:${PORT}`);
 // Variables de estado del robot virtual
 let state = {
     x: 0.0,
-    y: 34.5,
+    y: 80.0,
     theta: 0.0,
     zona: "EXTERIOR",
     estado: "ALINEAR_IR",
