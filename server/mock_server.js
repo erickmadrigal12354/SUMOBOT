@@ -48,7 +48,7 @@ function simularPaso() {
     // 3. Mantener al robot dentro del radio razonable del Dohyo (r ≈ 38.5 cm)
     state.distanciaCentro = Math.sqrt(state.x * state.x + state.y * state.y);
 
-    if (state.distanciaCentro > 80.0) {
+    if (state.distanciaCentro > 78.0) {
         // Si sobrepasa el borde, rebota hacia adentro
         state.x *= 0.9;
         state.y *= 0.9;

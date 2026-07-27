@@ -7,7 +7,7 @@ const ctx = canvas ? canvas.getContext("2d") : null;
 
 // Historial para el rastro de trayectoria (máximo 25 puntos)
 const trayectoria = [];
-const MAX_TRAYECTORIA = 25;
+const MAX_TRAYECTORIA = 75;
 
 function renderizarDohyo(data) {
     if (!canvas || !ctx) return;
@@ -18,7 +18,7 @@ function renderizarDohyo(data) {
     const centerY = height / 2;
 
     // Escala: traducir el radio real del Dohyo (38.5 cm) a ~180 píxeles en el Canvas
-    const radioDohyoCm = 38.5;
+    const radioDohyoCm = 80.0;
     const escala = 180 / radioDohyoCm;
 
     // -------------------------------------------------------------------------
@@ -94,7 +94,7 @@ function renderizarDohyo(data) {
         ctx.beginPath();
         ctx.moveTo(robotCanvasX, robotCanvasY);
         ctx.lineTo(oponenteX, oponenteY);
-        ctx.strokeStyle = distSonar <= 20 ? "#f43f5e" : "#fbbf24"; // Rojo si está cerca, amarillo si está más lejos
+        ctx.strokeStyle = distSonar <= 28 ? "#f43f5e" : "#fbbf24"; // Rojo si está cerca, amarillo si está más lejos
         ctx.lineWidth = 1.5;
         ctx.setLineDash([3, 3]);
         ctx.stroke();
