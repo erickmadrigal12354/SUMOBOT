@@ -1,7 +1,7 @@
 const { WebSocketServer } = require('ws');
 
 // Puerto para el simulador
-const socket = new WebSocket('wss://dry-jobs-stand.loca.lt');
+const socket = new WebSocket('wss://twistable-snitch-impure.ngrok-free.dev');
 const wss = new WebSocketServer({ port: PORT });
 
 console.log(`[SIMULADOR] Servidor Mock activo en ws://localhost:${PORT}`);
