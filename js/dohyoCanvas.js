@@ -7,7 +7,7 @@ const ctx = canvas ? canvas.getContext("2d") : null;
 
 // Historial para el rastro de trayectoria (máximo 25 puntos)
 const trayectoria = [];
-const MAX_TRAYECTORIA = 25;
+const MAX_TRAYECTORIA = 70;
 
 function renderizarDohyo(data) {
     if (!canvas || !ctx) return;
