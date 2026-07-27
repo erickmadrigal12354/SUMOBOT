@@ -174,7 +174,13 @@
             </div>
             <!-- Reservado para explicar FSM y fragmentos de código interactivos -->
             <div class="text-sm text-slate-600 dark:text-slate-400">
-                <p>[Aquí desglosaremos los estados: SEARCH, ATTACK, EVADE, WIGGLE y explicaremos qué hace cada función clave del firmware...]</p>
+                <p>La lógica de enfrentamiento se articula en la funcióen combate1(), la cual ajusta el nivel de agresión y la potencia de los motores según la zona identificada. En la zona "CENTRO", el Sumobot prioriza el escaneo y ataque a máxima potencia;
+                    en la zona "INTERMEDIA", cambia su aceleracióen funcionaron de si el oponente se encuentra cerca del borde para evitar caídas por accidente. Si el robot entra a la zona "EXTERIOR", activa de inmediato la función de emergencia irAlCentro(),
+                    la cual calcula el vector angular directo al origen mediante La Función del arco tangente de dos componentes (atan2(−X, Y )) para volver a un área segura</p>
+                <div class="flex items-center justify-center h-screen bg-gray-100">
+                    <bg>
+                        <img src="assets/images/diagrama de combate" width="900" height="700" alt="imagen de assets">
+                </div>
             </div>
         </section>
 
@@ -193,10 +199,7 @@
             <div class="text-sm text-slate-600 dark:text-slate-400">
                 <p>Los datos de los sensores se empaquetan en estructuras ligeras JSON y se transmiten a una frecuencia constante de 20 Hz (50 ms por paquete). Al recibir cada trama, la interfaz procesa los vectores de posición y orientación para renderizar
                     dinámicamente la trayectoria y posición del Sumobot sobre el Canvas 2D en tiempo real.</p>
-                <div class="flex items-center justify-center h-screen bg-gray-100">
-                    <bg>
-                        <img src="assets/images/diagrama de combate" width="900" height="700" alt="imagen de assets">
-                </div>
+
             </div>
         </section>
 
